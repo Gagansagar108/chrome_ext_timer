@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Hello Extensions",
+    "description": "Base Level Extension",
+    "version": "1.0",
+    "icons": {
+        "16": "images/book1.png",
+        "48": "images/book1.png",
+        "128": "images/book1.png"
+    },
+    "action": {
+        "default_icon": {
+            "16": "images/book1.png",
+            "24": "images/book1.png",
+            "32": "images/book1.png"
+        },
+        "title": "this is a title",
+        "default_popup": "app/default/hello.html"
+    },
+    "options_page": "app/default/options.html",
+    "permissions": [
+        "storage"
+    ],
+    "background": {
+        "service_worker": "app/default/background.js"
+    }
+}
